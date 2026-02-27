@@ -1,13 +1,89 @@
+/* ------------------------------------------- */
+/* Home */
+/* ------------------------------------------- */
 
-.hover-main-product{
-    position: absolute;
+.heroImage{
+    background-image: url(../../assets/MaskGroup.png);
+    height: 100vh;
     width: 100%;
-    inset: 0;
-    opacity: 0;
-    background-color: 646464;
-    z-index: 100;
-     transition: opacity 0.4s ease;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: end;
 }
-.main-product:hover .hover-main-product{
-    opacity: 1;
+.heroContent{
+    width: 35%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color:#fff3e3 ;
+    position: relative;
+    left: -15%;
+    bottom: 10%;
+
+}
+.heroContent .child h2{
+    font-size: 50px;
+    color: #b88e2f;
+}
+.heroContent .child button{
+    padding: 10px 35px;
+    border: none;
+    background-color: #b88e2f;
+    color:#fff;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------- */
+/* card-com */
+/* ------------------------------------------- */
+.cart-btn{
+    background-color: white;
+    color: #b88e2f;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.hoverd-card {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.card:hover .hoverd-card {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card-image{
+    position: relative;
+    overflow: hidden;
+}
+.discount-icon{
+    position: absolute;
+    
+    top: 10px;
+    right: 10px;
+
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;    
+    
 }

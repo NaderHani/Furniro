@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/Meubel House_Logos-05.png"
 export default function Navbar() {
   return (
     <>
       <nav className="container navbar navbar-expand-md navbar-light bg-light">
-        <Link className="navbar-brand" href="/">
+        <img src={logo} alt="" width={30} />
+        <Link className="navbar-brand ms-2 fw-bold" href="/">
           Furniro
         </Link>
         <button
@@ -39,8 +40,7 @@ export default function Navbar() {
                 Contact
               </Link>
             </li>
-
-           </ul>
+          </ul>
         </div>
       </nav>
     </>

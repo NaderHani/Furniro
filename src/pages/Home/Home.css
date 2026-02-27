@@ -1,0 +1,13 @@
+
+.hover-main-product{
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    opacity: 0;
+    background-color: 646464;
+    z-index: 100;
+     transition: opacity 0.4s ease;
+}
+.main-product:hover .hover-main-product{
+    opacity: 1;
+}

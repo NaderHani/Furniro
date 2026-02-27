@@ -1,10 +1,8 @@
-import React from "react";
-import home1 from "../../assets/home1.png";
-import home2 from "../../assets/home2.png";
-import home3 from "../../assets/home3.png";
+
 import CardCom from "./CardCom";
-import "./Home.css"
+import "./Home.css";
 import RangeCom from "./RangeCom";
+import ExploreCom from "./ExploreCom";
 export default function Home() {
   return (
     <>
@@ -30,7 +28,7 @@ export default function Home() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className="row">
-           <RangeCom/>
+            <RangeCom />
           </div>
         </section>
         <section>
@@ -38,9 +36,14 @@ export default function Home() {
             <h3 className="fw-bold ">Our Products</h3>
           </div>
           <CardCom />
+          <div className="my-5 m-auto w-100 text-center">
+            <button className="product-addMore">Show More</button>
+          </div>
         </section>
-        
       </div>
+        <section className="exploreSection" >
+          <ExploreCom/>
+        </section>
     </>
   );
 }

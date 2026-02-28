@@ -4,3 +4,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth !important;
 }
+.btn-footer
+{
+    border:none;
+    background-color: aqua;
+}

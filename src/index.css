@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+.btn-footer
+{
+    border:none;
+    border-bottom: 1px solid black;
+    background-color: inherit;
+}
+.input-footer {
+    border:none;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+}

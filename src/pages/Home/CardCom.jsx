@@ -7,6 +7,7 @@ import image5 from "../../assets/image5.png";
 import image6 from "../../assets/image6.png";
 import image7 from "../../assets/image7.png";
 import './Home.css'
+import { FlagTriangleRight,GitCompareIcon, Share } from 'lucide-react';
 export default function CardCom() {
         let product = [
           {
@@ -77,16 +78,7 @@ export default function CardCom() {
             <div className="w-100 card">
               <div>
                 <div className="card-image">
-                  <img
-                    src={item.image}
-                    alt=""
-                    className="w-100"
-                  />
-                </div>
-                <div className="discount-icon">
-                  
-                    <p>-30%</p>
-                  
+                  <img src={item.image} alt="" className="w-100" />
                 </div>
               </div>
               <div className="bg-light p-4 rounded-bottom-3">
@@ -104,9 +96,9 @@ export default function CardCom() {
                   <button className="cart-btn"> Add to cart</button>
                 </div>
                 <div className="d-felx justify-content-between text-white">
-                  <i className="mx-2">Share</i>
-                  <i className="mx-2">Compare</i>
-                  <i className="mx-2">Like</i>
+                  <Share className="mx-2"/>
+                  <GitCompareIcon className="mx-2"/>
+                  <FlagTriangleRight className="mx-2"/>
                 </div>
               </div>
             </div>

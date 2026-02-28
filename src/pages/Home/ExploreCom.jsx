@@ -1,5 +1,6 @@
 import React from "react";
 import exp1 from "../../assets/exp1.png";
+import exp2 from "../../assets/exp2.png";
 import { ArrowRight } from "lucide-react";
 export default function ExploreCom() {
   return (
@@ -37,13 +38,10 @@ export default function ExploreCom() {
           <div className="col-md-4">
             <div className="py-5">
               <div>
-                <img src={exp1} alt="" className="w-75" />
+                <img src={exp2} alt="" className="w-75" />
               </div>
               <div>
-                <div className="d-flex">
-                  <p>0</p>
-                  <p>0</p>
-                </div>
+                
               </div>
             </div>
           </div>

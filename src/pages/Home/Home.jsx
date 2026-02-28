@@ -3,27 +3,26 @@ import CardCom from "./CardCom";
 import "./Home.css";
 import RangeCom from "./RangeCom";
 import ExploreCom from "./ExploreCom";
+import FuniroGallery from "./Funiroiture";
 export default function Home() {
   return (
     <>
       <main>
         <div className="heroImage">
           <div className="heroContent">
-            <div className="child p-5">
-              <span>New Arrival</span>
-              <h2>Discover Our New Collection</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis.
-              </p>
-              <button>BUY Now</button>
-            </div>
+            <span>New Arrival</span>
+            <h2>Discover Our New Collection</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
+            <button>BUY Now</button>
           </div>
         </div>
       </main>
       <div className="container">
         <section>
-          <div className="w-100 m-auto text-center my-5 ">
+          <div className="w-100 m-auto text-center my-5">
             <h3 className="fw-bold">Browse The Range</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
@@ -41,9 +40,12 @@ export default function Home() {
           </div>
         </section>
       </div>
-        <section className="exploreSection" >
-          <ExploreCom/>
-        </section>
+      <section className="exploreSection">
+        <ExploreCom />
+      </section>
+      <section className="border-bottom">
+        <FuniroGallery />
+      </section>
     </>
   );
 }
